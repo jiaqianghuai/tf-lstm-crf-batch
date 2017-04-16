@@ -11,7 +11,7 @@ The input file should contain one sentence by line, and they have to be tokenize
 
 # Train a model
 To train your own model, you need to use the train.py script and provide the location of the training, development and testing set:
- ./train.py --train train.txt --dev dev.txt --test test.txt
+  ./train.py --train train.txt --dev dev.txt --test test.txt
 The training script will automatically give a name to the model and store it in ./models/ There are many parameters you can tune (CRF, dropout rate, embedding dimension, LSTM hidden layer size, batch_size, gpu, etc). To see all parameters, simply run:
- ./train.py --help
-Input files for the training script: each word has to be on a separate line, and there must be an empty line after each sentence. A line must contain at least 2 columns, the first one being the word itself, the last one being the named entity. It does not matter if there are extra columns that contain tags or chunks in between. 
+  ./train.py --helpß
+Input files for the training script: each word has to be on a separate line, and there must be an empty line after each sentence. A line must contain at least 2 columns, the first one being the word itself, the last one being the named entity. It does not matter if there are extra columns that contain tags or chunks in between.
